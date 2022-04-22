@@ -26,9 +26,10 @@ for (let i = 0; i < arr1.length; i++) {
         result1 = rs1[rs1.length - 1] + 2;
         rs1.push(result1);
     } else {
-        toNumber(rs1.push(arr1[i]));
+        Number((rs1.push(arr1[i])));
 
     }
     let sum = rs1.reduce((a, b) => a + b);
     console.log(sum);
+
 }
