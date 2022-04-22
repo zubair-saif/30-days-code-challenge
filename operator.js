@@ -30,7 +30,8 @@ var subtractProductAndSum = function (n) {
         product *= n % 10;
         sum += n % 10;
         n = Math.floor(n / 10);
+
     }
     return product - sum;
 }
-console.log(subtractProductAndSum(234))
+console.log(subtractProductAndSum(234));
