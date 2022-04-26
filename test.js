@@ -33,3 +33,8 @@ for (let i = 0; i < arr1.length; i++) {
     console.log(sum);
 
 }
+
+//if digit is C then pop the last element
+//if digit is D then multiply the last element by 2
+//if digit is + then add the last element by 2
+//if digit is number then push the number to the array
