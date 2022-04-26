@@ -13,27 +13,32 @@
 //     }
 // }
 
-let arr1 = ['5', '2', "+", "D", "C"];
-let result1 = null;
-let rs1 = [];
-for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] === "C") {
-        rs1.pop();
-    } else if (arr1[i] === "D") {
-        result1 = rs1[rs1.length - 1] * 2;
-        rs1.push(result1);
-    } else if (arr1[i] === "+") {
-        result1 = rs1[rs1.length - 1] + 2;
-        rs1.push(result1);
+let arr = ["5", "2", "D", "C", "+",];
+let result = null;
+let rs = [];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "C") {
+        rs.pop();
+    } else if (arr[i] === "D") {
+        result = rs[rs.length - 1] * 2;
+        rs.push(result);
+    } else if (arr[i] === "+") {
+        result = rs[rs.length - 1] + 2
+            ;
+        rs.push(result);
     } else {
-        Number((rs1.push(arr1[i])));
+        (rs.push(arr[i]));
+
 
     }
-    let sum = rs1.reduce((a, b) => a + b);
-    console.log(sum);
+    let n = rs.map(num => Number(num));
+    console.log('for', n)
 
 }
 
+// let sum = rs.reduce((a, b) => a + b);
+// console.log(sum);
+//[5,2,4]=11
 //if digit is C then pop the last element
 //if digit is D then multiply the last element by 2
 //if digit is + then add the last element by 2
