@@ -1,5 +1,5 @@
 var findLucky = function(arr) {
-	const result = []
+	const result = [];
 	const map = arr.reduce((acc, curr) => {
 		acc[curr] = curr in acc ? acc[curr] + 1 : 1
 		return acc
