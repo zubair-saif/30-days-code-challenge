@@ -3,3 +3,5 @@
 - arthimatic difference 
 - happy number
 - plusOne
+- preOrder Traversal
+- search in insert position
