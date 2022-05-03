@@ -6,3 +6,4 @@
 - preOrder Traversal
 - search in insert position
 - make equal string
+- sum of index
