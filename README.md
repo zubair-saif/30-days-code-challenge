@@ -8,3 +8,5 @@
 - make equal string
 - sum of index
 - sign of product
+- base ball
+- lucky number
